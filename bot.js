@@ -9,7 +9,7 @@ client.on('ready', () => {
     if (message.author.bot) return;
     
     
-    if (message.content.startsWith(pref)) {        const [name, ...args] = message.content.trim().substring(pref.length).split(/\s+/) //Seperating 
+    if (message.content.startsWith(pref)) {        const [name, ...args] = message.content.trim().substring(pref.length).split(/\s+/) //Seperating prefix from command and arguments
     console.log(name + " " + args)
     
     
@@ -45,7 +45,6 @@ client.on('ready', () => {
              
          }
     }
-  }});/*Dont touch these 3 brackets, and keep every command inside them. If there is an error that says something of the lines 
-name is not defined
-that means you have added an extra "}". */  
+  }});/*Dont touch these 3 brackets, and keep every command inside them. If there is an error that says something of the lines of `name is not defined`,
+that likely means you have added an extra "}". */  
 client.login("Go to your bot's application and press bot and copy token, paste it here")
